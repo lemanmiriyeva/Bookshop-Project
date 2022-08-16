@@ -1,0 +1,207 @@
+{% extends "layout.html" %}
+{% block head %}
+<title>Kitab Mağazası</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+  integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='slick/slick.css')}}" />
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='slick/slick-theme.css')}}" />
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .slider {
+    width: 90%;
+    margin: auto;
+  }
+
+  .slick-slide div {
+    width: 70%;
+  }
+
+  .slick-slide img {
+    width: 75%;
+    height: 250px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: white;
+  }
+
+  .slick-slide {
+    transition: all ease-in-out 0.3s;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+</style>
+{% endblock %}
+{% block content %}
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-lg-3 col-md-12 col-sm-12 d-flex align-items-lg-end justify-content-center">
+      <img width="240" src="{{book.image_url}}" alt="inkognito" />
+    </div>
+    <div
+      class="col-lg-9 col-md-12 col-sm-12 d-flex flex-column align-items-lg-end justify-content-lg-end justify-content-md-center justify-content-center">
+      <h2 class="fw-bold text-lg-right text-center">
+        {{book.title}}
+      </h2>
+      <div class="mb-4 text-lg-end text-md-center text-center">
+        <span class="text-success fw-bold fs-4">{{ "%.2f"|format(book.price)}} AZN</span>
+        
+      </div>
+      <p class="text-lg-end text-md-center text-center">
+        {{book.description}}
+      </p>
+      <div class="col-md-3 icons d-flex justify-content-between align-items-center">
+        <i class="fa fa-thumbs-up fs-2 text-primary" aria-hidden="true" id="hand"></i>
+        <i class="fa fa-heart fs-2 text-secondary" aria-hidden="true" id="heart"></i>
+        <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnAdd">Səbətə əlavə et</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-warning text-center mt-4" id="alert" role="alert">
+    Bu kitabdan cəmi <b id="numbers">{{book.stock}}</b> ədəd qalıb
+  </div>
+
+  <div class="d-flex flex-column align-items-center justify-content-center mt-5">
+    <h2 class="text-uppercase">Xüsusiyyətlər</h2>
+    <table class="table table-striped border-top">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Xüsusiyyət</th>
+          <th scope="col">Açıqlama</th>
+        </tr>
+      </thead>
+      <tbody class="border-top-0">
+        <tr>
+          <th scope="row">1</th>
+          <td>Dil:</td>
+          {% for lang in langs %}
+            {% if book.language_id == lang.id %}
+                <td>{{lang.lang_name}}</td>
+            {%endif%}
+           {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Janr:</td>
+          {% for genre in genres %}
+            {% if book.genre_id == genre.id %}
+                <td>{{genre.name}}</td>
+            {%endif%}
+           {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Müəllif:</td>
+          <td>{{book.author}}</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Nəşriyyat:</td>
+          <td>{{book.publisher}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- <div class="align-items-center justify-content-center mt-5">
+    <h2 class="text-uppercase text-center">şərh yaz</h2>
+    <form action="" method="POST">
+      {{ form.csrf_token }}
+      {{ render_field(form.full_name)}}
+      {{ render_field(form.comment)}}
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-5">Submit</button>
+      </div>
+    </form>
+    <div class="row d-flex flex-wrap justify-content-evenly">
+      {% for comment in range(all_comments|length) %}
+        <div class="card mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{ all_comments[comment].full_name }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ all_comments[comment].date_of_comment }}</h6>
+            <p class="card-text">{{ all_comments[comment].comment }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div> -->
+</div>
+<div class="text-center text-lg-start text-light bg-info d-flex align-items-center flex-column pt-5">
+  <h1 class="text-center">Bütün Kitablar</h1>
+  <section class="vertical-center-4 slider mt-5 mb-5">
+    <div>
+      <img src="{{url_for('static',filename='images/1984jpeg.jpeg')}}" />
+    </div>
+    <div>
+      <img src="{{url_for('static',filename='images/Hamlet.jpg')}}" />
+    </div>
+    <div>
+      <img src="{{url_for('static',filename='images/Inkognito.png')}}" />
+    </div>
+    <div>
+      <img src="{{url_for('static',filename='images/Otello.png')}}" />
+    </div>
+    <div>
+      <img src="{{url_for('static',filename='images/Palto.jpg')}}" />
+    </div>
+    <div>
+      <img src="{{url_for('static',filename='images/sefiller.jpeg')}}" />
+    </div>
+  </section>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bildiriş</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex justify-content-end align-items-center">
+        Məhsul səbətə əlavə edildi
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="closeBtn">
+          Bağla
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block js %}
+<script src="{{url_for('static',filename='js/product.js')}}"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="{{url_for('static',filename='slick/slick.js')}}" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $(".vertical-center-4").slick({
+      infinite: true,
+      dots: false,
+      vertical: false,
+      centerMode: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+    });
+  });
+</script>
+  {% endblock %}

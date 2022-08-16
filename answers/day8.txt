@@ -1,0 +1,4 @@
+**Bootstrap grid sistemi necə işləyir
+--Elementləri müvafiq şəkildə yerləşdirmək üçün Bootstrap grid sistemi bir sıra konteynerlər, sətirlər və sütunlardan istifadə edir. Bu grid sistemi maksimum 12 sütun dəyərini dəstəkləyir. 12-ci sütundan sonrakı hər şey yeni sətirə köçürüləcək.
+**Bootstrap grid sisteminin faydaları nələrdir
+--Daha az CSS funksionallığı və standart kodları təklif etməklə, vaxtınıza qənaət etməyə kömək edir.Həmçinin kod qarışıqlığının qarşısını alır.

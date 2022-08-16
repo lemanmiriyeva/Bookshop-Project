@@ -1,0 +1,4 @@
+**İndiyə qədər öyrəndiklərinizdən ən maraqlı mövzu hansı olub? (Niyə)
+--Position və flexbox mövzusu mənim üçün maraqlı oldu.Çünki bu mövzular vasitəsilə artıq istədiyim elementi istədiyim istiqamətdə çox sadə üsulla yerləşdirə bilirəm.
+**İndiyə qədər öyrəndiklərinizlə nə edə bilərsiniz?
+--İndiyə qədər öyrəndiklərimlə artıq müəyyən struktura malik veb səhifə qura bilərəm.Çünki demək olar ki veb səhifənin dizaynını qurmaq üçün istifadə olunan mövzuların 90% i artıq bizə məlumdur.

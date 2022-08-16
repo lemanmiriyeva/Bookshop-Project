@@ -1,0 +1,4 @@
+*What does CSS do--CSS nə üçün istifadə olunur?
+--CSS  HTML elementləri ilə qarşılıqlı əlaqədə olaraq veb səhifələrin üslubunu,stilini dəyişdirmək üçün istifadə olunur.
+*What are CSS selectors for--CSS selektorları nə üçündür?
+--CSS selektorları hansı HTML elementinə müraciət olunduğunu,yəni hansı html elementinin stilinin dəyişdiriləcəyini müəyyənləşdirmək üçün istifadə olunur.Qısaca stil vermək istədiyimiz html elementini hədəfləyir.Geniş çeşiddə CSS selektorları vardır.Bunlara class(.),id(#),v' ya sadəcə taqın adı(tagname) aiddir.

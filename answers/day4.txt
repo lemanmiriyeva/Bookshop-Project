@@ -1,0 +1,4 @@
+**************************************************DAY 4********************************************************************
+*Flexbox-un faydaları nələrdir?
+--Flexbox-dan istifadənin ən yaxşı tərəfi bu və ya digər istiqamətdə elementləri yerləşdirməyimizdir.
+Elementləri yerləşdirərkən həmin ölçüdə olan elementlərin ölçülərinə nəzarət etmək və elementlər arasındakı məsafəni idarə etmək üçün flexbox-dan istifadə olunur.

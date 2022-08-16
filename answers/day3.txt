@@ -1,0 +1,4 @@
+--Why we need CSS reset?
+--CSS Sıfırlama üslub cədvəli bütün standart brauzer üslublarını "sıfırlayan" qaydaların siyahısıdır. Brauzer üslublarını iki əsas səbəbə görə sıfırlayırıq: Bütün brauzerlər eyni standart qaydaları tətbiq etmir. ... Əsas üslublar fərqli olarsa, hər bir brauzerdə eyni dizaynları təmin etmək çətin ola bilər.
+--What are the advantages of using fonts instead of images as icons?
+--Simvol şriftlərinin əsas üstünlüyü onların çox gözəl miqyasda olmasıdır; rastr şəkillərdən daha keyfiyyətli ölçüdə böyüyürlər. Həmçinin, şrift simvolu mətn olduğundan, ölçüsünü tənzimləmək və rəngi dəyişmək üçün CSS asanlıqla tətbiq oluna bilər.

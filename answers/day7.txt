@@ -1,0 +1,7 @@
+**Bootstrap nədir?
+--Created OnMay 3, 2019byBizPlus
+Bootstrap Front-End Developerlər üçün hazırlanmış açıq mənbə və pulsuz CSS kitabxanasıdır. Bootstrap ilə masa üstü, tablet, mobil və bütün brauzerlər ilə uyğun veb saytlar hazırlaya bilərik. 
+**Necə işləyir?
+--getbootstrap.com saytından link vasitəsilə ya da yükləyərək şablonlardan rahatlıqla istifadə edə bilərik.
+**Bootstrap kimi paket yarada bilərsinizmi? Necə?
+--Gələcəkdə yaratma imkanım olsa edərəm,həddindən artıq çox yer tutan kodları qısaltmaq üçün.

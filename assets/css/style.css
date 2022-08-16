@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.first-title-div {
+  background-color: #fff;
+  padding: 20px 0;
+  font-family: "Lobster", cursive;
+}
+.first-title {
+  text-align: center;
+}
+.first-title a {
+  text-decoration: none;
+  color: #109e97;
+  font-weight: normal;
+  font-size: 43px;
+}
+.menu-links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 65%;
+  margin: auto;
+  list-style: none;
+}
+.menu-links li {
+  flex: 1;
+  color: white;
+  height: 8vh;
+  border-right: 1px solid white;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.menu {
+  background-color: #109e97;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.home {
+  border-left: 1px solid white;
+}
+.book-section {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.main {
+  height: 628px;
+  background-image: url(../images/paper_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.bookBtn {
+  background-color: #109e97;
+  color: #fff;
+  border: 1px solid #109e97;
+  border-radius: 5px;
+  text-align: center;
+  width: 150px;
+  height: 45px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+button:nth-child(2)
+.book-image {
+  display: flex;
+  align-items: center;
+  width: 300px;
+}
+.book-image img {
+  object-fit: cover;
+  width: 100%;
+}
+.book-content p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.book-content {
+  width: 57%;
+}
+.books {
+  width: 65%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: 2px dashed #916a6a;
+  padding: 1rem;
+}
+.book img {
+  width: 150px;
+}
+.book {
+  width: 250px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  align-items: center;
+  margin: 1rem 0;
+  border: 1px dotted #109e97;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.book h4 {
+  margin-top: 10px;
+}
+.book a {
+  margin-top: 10px;
+}
+.book-list h1 {
+  text-align: center;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+.book-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 80px;
+  height: 1200px;
+}
+.footer {
+  border-top: 2px solid black;
+  background-color: #109e97;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 120px 0 0 0;
+
+  font-family: "Roboto", sans-serif;
+}
+.social-media li:not(:last-child) {
+  border: 1px solid #109e97;
+  background-color: #109e97;
+}
+.social-media li {
+  padding: 7px;
+
+  border-radius: 50%;
+  text-align: center;
+}
+.social-media a {
+  color: white;
+  font-size: 16px;
+}
+.social-media {
+  position: fixed;
+  top: 200px;
+  right: 10px;
+}
+ul {
+  list-style: none;
+}
+
+.angle {
+  margin-top: 10px;
+  background-color: gray;
+}

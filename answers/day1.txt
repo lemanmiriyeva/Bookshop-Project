@@ -1,0 +1,12 @@
+*What is GIT?
+--Git is a version control system that allows us to store our projects on the Internet (GitHub, GitLab), to manage them more easily, and to run several people on the same project.
+*Why we use it?
+--When we are working on large projects, several people are used to combine the codes because they are working at the same time. With the help of Git commands, everyone can easily do their job. Then the work done is combined.
+*What is the GITHub?
+--GitHub is a web-based interface that uses Git, the version control software that lets multiple people make separate changes to web pages at the same time. 
+*How web browser works?
+--When the web browser fetches data from an internet connected server, it uses a piece of software called a rendering engine to translate that data into text and images. This data is written in Hypertext Markup Language (HTML) and web browsers read this code to create what we see, hear and experience on the internet.
+*What are html tags for?
+--HTML tags are the hidden keywords within a web page that define how your web browser must format and display the content.
+*What are attributes for?
+--Attributes define additional characteristics or properties of the element
